@@ -25,8 +25,8 @@ disp.begin()
 # Clear display.
 disp.clear()
 disp.display()
-# disp.command(0xA0)   # mirrors left-right
-disp.command(0xC0)
+disp.command(0xA0)   # mirrors left-right
+disp.command(0xC0)   # mirrors vertically
 
 
 
@@ -52,11 +52,10 @@ x = 0
 
 
 # Load default font.
-font = ImageFont.load_default()
 
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
-# font = ImageFont.truetype('Minecraftia.ttf', 8)
+font = ImageFont.truetype('PokemonDPPt.ttf', 8)
 
 while True:
 
@@ -67,6 +66,11 @@ while True:
     # Write two lines of text.
 
     draw.text((x, top), "Testing Testing!", font=font, fill=255)
+    currentTime = str(time.asctime())
+    draw.text((x, top + 8), "The current time is: ", font = font, fill = 255)
+    draw.text((x, top + 16), currentTime, font = font, fill = 255)
+
+
 
     # Display image.
     disp.image(image)
