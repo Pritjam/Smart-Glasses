@@ -58,7 +58,7 @@ font = ImageFont.load_default()
 
 while True:
 
-    disp.command(0xC8)
+    disp.command(0xA1)
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,width,height), outline=0, fill=0)
 
