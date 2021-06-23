@@ -26,7 +26,7 @@ disp.begin()
 disp.clear()
 disp.display()
 # disp.command(0xA0)   # mirrors left-right
-disp.command(0xC8)
+disp.command(0xC0)
 
 
 
