@@ -69,5 +69,5 @@ while True:
     # Display image.
     disp.image(image)
     disp.display()
-    disp.command(SSD1306_INVERTDISPLAY)
+
     time.sleep(.1)
