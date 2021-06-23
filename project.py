@@ -25,6 +25,8 @@ disp.begin()
 # Clear display.
 disp.clear()
 disp.display()
+disp.command(0xA1)
+
 
 # Create blank image for drawing.
 # Make sure to create image with mode '1' for 1-bit color.
