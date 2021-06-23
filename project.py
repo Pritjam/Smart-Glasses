@@ -58,7 +58,7 @@ font = ImageFont.load_default()
 
 while True:
 
-    disp.command(0xA1)
+    
     # Draw a black filled box to clear the image.
     draw.rectangle((0,0,width,height), outline=0, fill=0)
 
@@ -69,4 +69,5 @@ while True:
     # Display image.
     disp.image(image)
     disp.display()
+    disp.command(SSD1306_INVERTDISPLAY)
     time.sleep(.1)
