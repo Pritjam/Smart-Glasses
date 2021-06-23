@@ -55,7 +55,7 @@ x = 0
 
 # Alternatively load a TTF font.  Make sure the .ttf font file is in the same directory as the python script!
 # Some other nice fonts to try: http://www.dafont.com/bitmap.php
-font = ImageFont.truetype('PokemonDPPt.ttf', 8)
+font = ImageFont.truetype('PokemonDPPt.ttf', 16)
 
 while True:
 
@@ -67,8 +67,8 @@ while True:
 
     draw.text((x, top), "Testing Testing!", font=font, fill=255)
     currentTime = str(time.asctime())
-    draw.text((x, top + 8), "The current time is: ", font = font, fill = 255)
-    draw.text((x, top + 16), currentTime, font = font, fill = 255)
+    draw.text((x, top + 16), "The current time is: ", font = font, fill = 255)
+    draw.text((x, top + 32), currentTime, font = font, fill = 255)
 
 
 
