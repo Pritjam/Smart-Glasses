@@ -25,6 +25,7 @@ disp.begin()
 # Clear display.
 disp.clear()
 disp.display()
+disp.command(0xA0)
 
 
 
@@ -64,7 +65,7 @@ while True:
 
     # Write two lines of text.
 
-    draw.text((x, top), "Testing Testing!")
+    draw.text((x, top), "Testing Testing!", font=font, fill=255)
 
     # Display image.
     disp.image(image)
