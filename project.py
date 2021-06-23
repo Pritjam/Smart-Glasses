@@ -25,7 +25,7 @@ disp.begin()
 # Clear display.
 disp.clear()
 disp.display()
-disp.command(0xA1)
+disp.command(0xC8)
 
 
 # Create blank image for drawing.
