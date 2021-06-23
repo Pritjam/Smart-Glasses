@@ -26,7 +26,7 @@ disp.begin()
 disp.clear()
 disp.display()
 disp.command(0xA0)   # mirrors left-right
-disp.command(0xC0)   # mirrors vertically
+disp.command(0xC8)   # mirrors vertically
 
 
 
@@ -66,7 +66,7 @@ while True:
     # Write two lines of text.
 
     draw.text((x, top), "Testing Testing!", font=font, fill=255)
-    currentTime = str(time.asctime())
+    currentTime = str(time.strftime("%H:%M %a, %b %d."))
     draw.text((x, top + 16), "The current time is: ", font = font, fill = 255)
     draw.text((x, top + 32), currentTime, font = font, fill = 255)
 
